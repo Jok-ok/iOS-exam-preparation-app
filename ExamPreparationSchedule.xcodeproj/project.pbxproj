@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA472A6929D9B0D4002FCC10 /* ExamScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A6829D9B0D4002FCC10 /* ExamScheduleViewModel.swift */; };
+		FA472A6E29D9B230002FCC10 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A6D29D9B230002FCC10 /* Exam.swift */; };
+		FA472A7029D9B266002FCC10 /* ExamQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A6F29D9B266002FCC10 /* ExamQuestion.swift */; };
+		FA472A7229D9B29A002FCC10 /* TimeIntervalForPreparation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7129D9B29A002FCC10 /* TimeIntervalForPreparation.swift */; };
+		FA472A7429D9B2EA002FCC10 /* QuestionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7329D9B2EA002FCC10 /* QuestionInputView.swift */; };
+		FA472A7729D9B49E002FCC10 /* QuestionAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7629D9B49E002FCC10 /* QuestionAddingView.swift */; };
+		FA472A7929D9BF1D002FCC10 /* ExamInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7829D9BF1D002FCC10 /* ExamInputView.swift */; };
+		FA472A7B29D9C024002FCC10 /* ChooseQuestionExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7A29D9C024002FCC10 /* ChooseQuestionExamView.swift */; };
 		FAB0057529D819B6005D838C /* ExamPreparationScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0057429D819B6005D838C /* ExamPreparationScheduleApp.swift */; };
-		FAB0057729D819B6005D838C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0057629D819B6005D838C /* ContentView.swift */; };
+		FAB0057729D819B6005D838C /* ExamInfosAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0057629D819B6005D838C /* ExamInfosAddingView.swift */; };
 		FAB0057929D819B7005D838C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB0057829D819B7005D838C /* Assets.xcassets */; };
 		FAB0057C29D819B7005D838C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB0057B29D819B7005D838C /* Preview Assets.xcassets */; };
+		FAB0058429D87171005D838C /* String + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0058329D87171005D838C /* String + extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA472A6829D9B0D4002FCC10 /* ExamScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleViewModel.swift; sourceTree = "<group>"; };
+		FA472A6D29D9B230002FCC10 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		FA472A6F29D9B266002FCC10 /* ExamQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamQuestion.swift; sourceTree = "<group>"; };
+		FA472A7129D9B29A002FCC10 /* TimeIntervalForPreparation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalForPreparation.swift; sourceTree = "<group>"; };
+		FA472A7329D9B2EA002FCC10 /* QuestionInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionInputView.swift; sourceTree = "<group>"; };
+		FA472A7629D9B49E002FCC10 /* QuestionAddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAddingView.swift; sourceTree = "<group>"; };
+		FA472A7829D9BF1D002FCC10 /* ExamInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamInputView.swift; sourceTree = "<group>"; };
+		FA472A7A29D9C024002FCC10 /* ChooseQuestionExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseQuestionExamView.swift; sourceTree = "<group>"; };
 		FAB0057129D819B6005D838C /* ExamPreparationSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamPreparationSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB0057429D819B6005D838C /* ExamPreparationScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamPreparationScheduleApp.swift; sourceTree = "<group>"; };
-		FAB0057629D819B6005D838C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAB0057629D819B6005D838C /* ExamInfosAddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamInfosAddingView.swift; sourceTree = "<group>"; };
 		FAB0057829D819B7005D838C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB0057B29D819B7005D838C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAB0058329D87171005D838C /* String + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +50,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA472A6C29D9B220002FCC10 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA472A6D29D9B230002FCC10 /* Exam.swift */,
+				FA472A6F29D9B266002FCC10 /* ExamQuestion.swift */,
+				FA472A7129D9B29A002FCC10 /* TimeIntervalForPreparation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA472A7529D9B418002FCC10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA472A7829D9BF1D002FCC10 /* ExamInputView.swift */,
+				FA472A7329D9B2EA002FCC10 /* QuestionInputView.swift */,
+				FA472A6829D9B0D4002FCC10 /* ExamScheduleViewModel.swift */,
+				FAB0057629D819B6005D838C /* ExamInfosAddingView.swift */,
+				FA472A7629D9B49E002FCC10 /* QuestionAddingView.swift */,
+				FA472A7A29D9C024002FCC10 /* ChooseQuestionExamView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FAB0056829D819B6005D838C = {
 			isa = PBXGroup;
 			children = (
+				FAB0058229D87160005D838C /* UI + Extensions */,
 				FAB0057329D819B6005D838C /* ExamPreparationSchedule */,
 				FAB0057229D819B6005D838C /* Products */,
 			);
@@ -51,8 +93,9 @@
 		FAB0057329D819B6005D838C /* ExamPreparationSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				FA472A7529D9B418002FCC10 /* Views */,
+				FA472A6C29D9B220002FCC10 /* Models */,
 				FAB0057429D819B6005D838C /* ExamPreparationScheduleApp.swift */,
-				FAB0057629D819B6005D838C /* ContentView.swift */,
 				FAB0057829D819B7005D838C /* Assets.xcassets */,
 				FAB0057A29D819B7005D838C /* Preview Content */,
 			);
@@ -65,6 +108,14 @@
 				FAB0057B29D819B7005D838C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAB0058229D87160005D838C /* UI + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAB0058329D87171005D838C /* String + extension.swift */,
+			);
+			path = "UI + Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +188,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB0057729D819B6005D838C /* ContentView.swift in Sources */,
+				FA472A7029D9B266002FCC10 /* ExamQuestion.swift in Sources */,
+				FA472A7429D9B2EA002FCC10 /* QuestionInputView.swift in Sources */,
+				FAB0057729D819B6005D838C /* ExamInfosAddingView.swift in Sources */,
+				FAB0058429D87171005D838C /* String + extension.swift in Sources */,
+				FA472A6929D9B0D4002FCC10 /* ExamScheduleViewModel.swift in Sources */,
+				FA472A6E29D9B230002FCC10 /* Exam.swift in Sources */,
+				FA472A7B29D9C024002FCC10 /* ChooseQuestionExamView.swift in Sources */,
+				FA472A7729D9B49E002FCC10 /* QuestionAddingView.swift in Sources */,
+				FA472A7229D9B29A002FCC10 /* TimeIntervalForPreparation.swift in Sources */,
+				FA472A7929D9BF1D002FCC10 /* ExamInputView.swift in Sources */,
 				FAB0057529D819B6005D838C /* ExamPreparationScheduleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
