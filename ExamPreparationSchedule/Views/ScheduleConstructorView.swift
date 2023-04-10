@@ -1,23 +1,20 @@
 import SwiftUI
 
 struct ScheduleConstructorView: View {
+    @Environment(\.dismiss) var dismiss
     @ObservedObject var viewModel: ExamScheduleViewModel
     @State var checkSuccess: Bool = false
     
     var body: some View {
         ScrollView {
-            if checkSuccess {
-                successBody
-            }
-            else {
-                noSuccessBody
-            }
-        }
+            successBody
+        }.alert("Построить график не удалось. 😿", isPresented: $checkSuccess, actions: {Button("Изменить параметры") {dismiss()}}, message: {noSuccessBody})
         .navigationDestination(for: PreparationDay.self) { preparationDay in
         }
         .onAppear {
-            checkSuccess = viewModel.checkPossibilityPreparation()
+            checkSuccess = !viewModel.checkPossibilityPreparation()
         }
+
         .navigationTitle("График")
     }
     private var successBody: some View {
@@ -30,13 +27,7 @@ struct ScheduleConstructorView: View {
         }.padding()
     }
     private var noSuccessBody: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text("К сожалению, построить график с заданными параметрами не удалось.")
-            Text("Можете попробовать:")
-            Text("Изменить параметры расписания")
-            Text("Уменьшить количество вопросов, оставив только основные")
-            Text("Изменить количество дней, непохдящих для подготовки к экзаменам")
-        }
+        Text("Можете попробовать:\n1. Изменить параметры расписания\n2. Уменьшить количество вопросов, оставив только основные\n3. Изменить количество дней, неподходящих для подготовки к экзаменам")
     }
 }
 
