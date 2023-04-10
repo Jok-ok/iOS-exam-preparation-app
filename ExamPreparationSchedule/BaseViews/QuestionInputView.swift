@@ -10,7 +10,7 @@ struct QuestionInputView: View {
             TextField("Текст вопроса...", text: $question.text)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
-            Stepper(value: $question.timeToLearn) {
+            Stepper(value: $question.timeToLearn, step: 5) {
                 VStack {
                     Text("На подготовку вопроса уйдет")
                         .font(.footnote)
