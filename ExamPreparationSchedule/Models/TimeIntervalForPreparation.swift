@@ -1,6 +1,6 @@
 import Foundation
 
-struct TimeIntervalForPreparation {
-    var from: Int = 0
-    var to: Int = 0
+struct TimeIntervalForPreparation: Equatable, Hashable {
+    public var from: Int = 16
+    public var to: Int = 20
 }

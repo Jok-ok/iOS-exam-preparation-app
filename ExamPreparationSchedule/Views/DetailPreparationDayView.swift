@@ -2,6 +2,14 @@ import SwiftUI
 
 struct DetailPreparationDayView: View {
     @Binding var preparationDay: PreparationDay
+    private let formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.init(identifier: "ru")
+        formatter.timeStyle = .none
+        formatter.dateStyle = .medium
+        
+        return formatter
+    }()
     private var dayType: String {
         if preparationDay.isBadDay {
             return "Другие планы"
@@ -42,21 +50,8 @@ struct DetailPreparationDayView: View {
                 }
             }){
             }
-        }.navigationTitle(preparationDay.day.formatted())
+        }
+        .navigationTitle("Дата \(preparationDay.day, formatter: formatter)")
     }
 }
 
-
-//struct DetailPreparationDayView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailPreparationDayView(preparationDay: PreparationDay(day: .now,
-//                                                                preparationInterval: TimeIntervalForPreparation(from: 10, to: 20),
-//                                                                isBadDay: false,
-//                                                                examQuestions: [ExamQuestion(num: 1, text: "Какой-то текст", timeToLearn: 30),
-//                                                                                ExamQuestion(num: 1, text: "Какой-то текст", timeToLearn: 30),
-//                                                                                ExamQuestion(num: 1, text: "Какой-то текст", timeToLearn: 30),
-//                                                                                ExamQuestion(num: 1, text: "Какой-то текст", timeToLearn: 30),
-//                                                                                ExamQuestion(num: 1, text: "Какой-то текст", timeToLearn: 30),
-//                                                                                ExamQuestion(num: 1, text: "Какой-то текст", timeToLearn: 30)]))
-//    }
-//}

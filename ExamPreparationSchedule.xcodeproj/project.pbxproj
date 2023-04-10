@@ -15,11 +15,18 @@
 		FA472A7729D9B49E002FCC10 /* QuestionAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7629D9B49E002FCC10 /* QuestionAddingView.swift */; };
 		FA472A7929D9BF1D002FCC10 /* ExamInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7829D9BF1D002FCC10 /* ExamInputView.swift */; };
 		FA472A7B29D9C024002FCC10 /* ChooseQuestionExamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7A29D9C024002FCC10 /* ChooseQuestionExamView.swift */; };
+		FA472A7F29D9F0AD002FCC10 /* PreparationScheduleConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA472A7E29D9F0AD002FCC10 /* PreparationScheduleConfigurationView.swift */; };
 		FAB0057529D819B6005D838C /* ExamPreparationScheduleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0057429D819B6005D838C /* ExamPreparationScheduleApp.swift */; };
 		FAB0057729D819B6005D838C /* ExamInfosAddingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0057629D819B6005D838C /* ExamInfosAddingView.swift */; };
 		FAB0057929D819B7005D838C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB0057829D819B7005D838C /* Assets.xcassets */; };
 		FAB0057C29D819B7005D838C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB0057B29D819B7005D838C /* Preview Assets.xcassets */; };
 		FAB0058429D87171005D838C /* String + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0058329D87171005D838C /* String + extension.swift */; };
+		FACB205C29DE0E6C00CDA3F9 /* LineStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB205B29DE0E6C00CDA3F9 /* LineStepperView.swift */; };
+		FACB205E29DE1DC000CDA3F9 /* PreparationDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB205D29DE1DC000CDA3F9 /* PreparationDay.swift */; };
+		FACB206029DE1EB200CDA3F9 /* PreparationDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB205F29DE1EB200CDA3F9 /* PreparationDayView.swift */; };
+		FACB206229DE2E9400CDA3F9 /* ScheduleConstructorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB206129DE2E9400CDA3F9 /* ScheduleConstructorView.swift */; };
+		FACB206429DE3AD600CDA3F9 /* Calendar + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB206329DE3AD600CDA3F9 /* Calendar + Extension.swift */; };
+		FACB206629DE4E4300CDA3F9 /* DetailPreparationDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACB206529DE4E4300CDA3F9 /* DetailPreparationDayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,12 +38,19 @@
 		FA472A7629D9B49E002FCC10 /* QuestionAddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAddingView.swift; sourceTree = "<group>"; };
 		FA472A7829D9BF1D002FCC10 /* ExamInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamInputView.swift; sourceTree = "<group>"; };
 		FA472A7A29D9C024002FCC10 /* ChooseQuestionExamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseQuestionExamView.swift; sourceTree = "<group>"; };
+		FA472A7E29D9F0AD002FCC10 /* PreparationScheduleConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationScheduleConfigurationView.swift; sourceTree = "<group>"; };
 		FAB0057129D819B6005D838C /* ExamPreparationSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamPreparationSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB0057429D819B6005D838C /* ExamPreparationScheduleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamPreparationScheduleApp.swift; sourceTree = "<group>"; };
 		FAB0057629D819B6005D838C /* ExamInfosAddingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamInfosAddingView.swift; sourceTree = "<group>"; };
 		FAB0057829D819B7005D838C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAB0057B29D819B7005D838C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAB0058329D87171005D838C /* String + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + extension.swift"; sourceTree = "<group>"; };
+		FACB205B29DE0E6C00CDA3F9 /* LineStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineStepperView.swift; sourceTree = "<group>"; };
+		FACB205D29DE1DC000CDA3F9 /* PreparationDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationDay.swift; sourceTree = "<group>"; };
+		FACB205F29DE1EB200CDA3F9 /* PreparationDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationDayView.swift; sourceTree = "<group>"; };
+		FACB206129DE2E9400CDA3F9 /* ScheduleConstructorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleConstructorView.swift; sourceTree = "<group>"; };
+		FACB206329DE3AD600CDA3F9 /* Calendar + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar + Extension.swift"; sourceTree = "<group>"; };
+		FACB206529DE4E4300CDA3F9 /* DetailPreparationDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPreparationDayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 				FA472A6D29D9B230002FCC10 /* Exam.swift */,
 				FA472A6F29D9B266002FCC10 /* ExamQuestion.swift */,
 				FA472A7129D9B29A002FCC10 /* TimeIntervalForPreparation.swift */,
+				FACB205D29DE1DC000CDA3F9 /* PreparationDay.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -63,12 +78,13 @@
 		FA472A7529D9B418002FCC10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FA472A7829D9BF1D002FCC10 /* ExamInputView.swift */,
-				FA472A7329D9B2EA002FCC10 /* QuestionInputView.swift */,
-				FA472A6829D9B0D4002FCC10 /* ExamScheduleViewModel.swift */,
 				FAB0057629D819B6005D838C /* ExamInfosAddingView.swift */,
-				FA472A7629D9B49E002FCC10 /* QuestionAddingView.swift */,
 				FA472A7A29D9C024002FCC10 /* ChooseQuestionExamView.swift */,
+				FA472A7629D9B49E002FCC10 /* QuestionAddingView.swift */,
+				FA472A7E29D9F0AD002FCC10 /* PreparationScheduleConfigurationView.swift */,
+				FACB206129DE2E9400CDA3F9 /* ScheduleConstructorView.swift */,
+				FACB206529DE4E4300CDA3F9 /* DetailPreparationDayView.swift */,
+				FA472A6829D9B0D4002FCC10 /* ExamScheduleViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +109,7 @@
 		FAB0057329D819B6005D838C /* ExamPreparationSchedule */ = {
 			isa = PBXGroup;
 			children = (
+				FACB205A29DE0A5000CDA3F9 /* BaseViews */,
 				FA472A7529D9B418002FCC10 /* Views */,
 				FA472A6C29D9B220002FCC10 /* Models */,
 				FAB0057429D819B6005D838C /* ExamPreparationScheduleApp.swift */,
@@ -114,8 +131,20 @@
 			isa = PBXGroup;
 			children = (
 				FAB0058329D87171005D838C /* String + extension.swift */,
+				FACB206329DE3AD600CDA3F9 /* Calendar + Extension.swift */,
 			);
 			path = "UI + Extensions";
+			sourceTree = "<group>";
+		};
+		FACB205A29DE0A5000CDA3F9 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				FA472A7829D9BF1D002FCC10 /* ExamInputView.swift */,
+				FA472A7329D9B2EA002FCC10 /* QuestionInputView.swift */,
+				FACB205B29DE0E6C00CDA3F9 /* LineStepperView.swift */,
+				FACB205F29DE1EB200CDA3F9 /* PreparationDayView.swift */,
+			);
+			path = BaseViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +217,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACB206629DE4E4300CDA3F9 /* DetailPreparationDayView.swift in Sources */,
+				FACB205C29DE0E6C00CDA3F9 /* LineStepperView.swift in Sources */,
 				FA472A7029D9B266002FCC10 /* ExamQuestion.swift in Sources */,
 				FA472A7429D9B2EA002FCC10 /* QuestionInputView.swift in Sources */,
 				FAB0057729D819B6005D838C /* ExamInfosAddingView.swift in Sources */,
 				FAB0058429D87171005D838C /* String + extension.swift in Sources */,
+				FA472A7F29D9F0AD002FCC10 /* PreparationScheduleConfigurationView.swift in Sources */,
+				FACB206229DE2E9400CDA3F9 /* ScheduleConstructorView.swift in Sources */,
+				FACB206029DE1EB200CDA3F9 /* PreparationDayView.swift in Sources */,
+				FACB206429DE3AD600CDA3F9 /* Calendar + Extension.swift in Sources */,
+				FACB205E29DE1DC000CDA3F9 /* PreparationDay.swift in Sources */,
 				FA472A6929D9B0D4002FCC10 /* ExamScheduleViewModel.swift in Sources */,
 				FA472A6E29D9B230002FCC10 /* Exam.swift in Sources */,
 				FA472A7B29D9C024002FCC10 /* ChooseQuestionExamView.swift in Sources */,

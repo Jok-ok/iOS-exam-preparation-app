@@ -1,29 +1,37 @@
 import SwiftUI
 
 struct ExamInfosAddingView: View {
-    @ObservedObject var viewModel = ExamScheduleViewModel()
-    @State var canMoveNext: Bool = false
+    @ObservedObject private var viewModel = ExamScheduleViewModel()
+
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
-                Section(footer: NavigationLink(destination: ChooseQuestionExamView(viewModel: viewModel)){ Text("Продолжить")
+                Section(footer: NavigationLink(destination: ChooseQuestionExamView(viewModel: viewModel)) { Text("Продолжить")
                         .font(Font(CTFont(.system, size: 24)))
                         .frame(maxWidth: .infinity, alignment: .center)
                         .padding()
-                }){
+                }.simultaneousGesture(TapGesture().onEnded{
+                    viewModel.sortExams()
+                })){
                     ForEach($viewModel.exams.indices, id: \.self) { index in
                         ExamInputView(exam: $viewModel.exams[index])
-                    }.onDelete(perform: viewModel.deleteExam)
+                    }.onDelete(perform: { self.resignAnyFirstResponder()
+                        viewModel.exams.remove(atOffsets: $0) })
                 }
-            }.listStyle(.insetGrouped)
-                .background(.white)
-                .navigationTitle("Дисциплины")
-            
-                .toolbar {
-                    Button("Добавить", action: viewModel.addExam)
-                }
+            }
+            .listStyle(.insetGrouped)
+            .navigationTitle("Дисциплины")
+            .toolbar {
+                Button("Добавить", action: viewModel.addExam)
+            }
         }
+    }
+}
+
+extension View {
+    public func resignAnyFirstResponder() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to:nil, from:nil, for:nil)
     }
 }
 

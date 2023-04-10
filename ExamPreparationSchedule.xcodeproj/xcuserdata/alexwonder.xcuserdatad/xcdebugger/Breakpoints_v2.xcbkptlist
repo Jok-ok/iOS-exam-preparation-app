@@ -7,17 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2FEB3829-5D50-41F8-8679-681225368DE7"
-            shouldBeEnabled = "No"
+            uuid = "10A9E94D-FC2B-44E2-9320-8E6556B8F8B8"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ExamPreparationSchedule/Views/ExamInfosAddingView.swift"
+            filePath = "ExamPreparationSchedule/Views/ExamScheduleViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "body"
-            landmarkType = "24">
+            startingLineNumber = "167"
+            endingLineNumber = "167"
+            landmarkName = "calculateSchedule(daysToLearn:clearWorkMinutes:badDaysInSessionExamCount:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -1,28 +1,28 @@
 import SwiftUI
 
 struct QuestionAddingView: View {
+    @Environment(\.dismiss) var dismiss
     @ObservedObject var viewModel: ExamScheduleViewModel
-    private var choosenExamIndex: Int
-    
-    init(viewModel: ExamScheduleViewModel, choosenExam: Exam) {
-        self.viewModel = viewModel
-        viewModel.setChoosenExam(choosenExam)
-        choosenExamIndex = viewModel.exams.firstIndex(of: choosenExam) ?? 0
-
-    }
+    @State var examIndex: Int
     
     var body: some View {
         List {
-            ForEach($viewModel.exams[choosenExamIndex].questions.indices, id: \.self) { index in
-                QuestionInputView(question: $viewModel.exams[choosenExamIndex].questions[index])
-            }
+            Section(footer:
+                        Button("Продолжить", action: { dismiss() })
+                .buttonStyle(.borderless)
+                .font(Font(CTFont(.system, size: 24)))
+                .frame(maxWidth: .infinity, alignment: .center)
+                .padding()){
+                    ForEach($viewModel.exams[examIndex].questions, id: \.id) { question in
+                        QuestionInputView(question: question)
+                    }
+                    .onDelete(perform: viewModel.deleteQuestion(for: examIndex))
+                }
         }
-        .navigationTitle(viewModel.exams[choosenExamIndex].name)
         .toolbar {
-            Button("Добавить") {
-                viewModel.addQuestion()
-            }
+            Button("Добавить", action: { viewModel.addQuestion(to: examIndex) })
         }
+        .navigationTitle("\(viewModel.exams[examIndex].name)")
     }
 }
 

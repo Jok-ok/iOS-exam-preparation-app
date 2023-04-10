@@ -1,20 +1,20 @@
-//
-//  SwiftUIView.swift
-//  ExamPreparationSchedule
-//
-//  Created by Александр Воробей on 05.04.2023.
-//
-
 import SwiftUI
 
 struct LineStepperView: View {
+    @Binding var value: Int
+    var prompt: String
+    var step: Int
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(prompt)
+            Spacer()
+            Text("\(value)")
+                .bold()
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 15))
+            Stepper("", value: $value, step: step)
+                .labelsHidden()
+        }
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        LineStepperView()
-    }
-}

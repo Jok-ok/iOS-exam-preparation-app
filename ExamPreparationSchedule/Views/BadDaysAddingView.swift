@@ -1,15 +1,13 @@
-//
-//  BadDaysAddingView.swift
-//  ExamPreparationSchedule
-//
-//  Created by Александр Воробей on 02.04.2023.
-//
-
 import SwiftUI
 
 struct BadDaysAddingView: View {
+    @State var badDays = Set<DateComponents>()
+    @State var viewModel = ExamScheduleViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack { Text("Выберите неподходящие для подготовки дни")
+            MultiDatePicker("Выберите неподходящие для подготовки дни", selection: $badDays, in: .now...)
+        }
     }
 }
 

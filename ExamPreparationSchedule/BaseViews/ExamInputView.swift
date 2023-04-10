@@ -9,7 +9,7 @@ struct ExamInputView: View {
             TextField("Введите название дисциплины", text: $exam.name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             Text("Укажите дату и время экзамена:")
-            DatePicker("", selection: $exam.dateTime)
+            DatePicker("", selection: $exam.dateTime, in: Calendar.current.date(byAdding: .day, value: 1, to: .now)!...)
                 .labelsHidden()
                 .environment(\.locale, Locale.init(identifier: "ru"))
         }
