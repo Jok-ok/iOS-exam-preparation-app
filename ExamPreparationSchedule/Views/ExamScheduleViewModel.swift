@@ -165,16 +165,24 @@ class ExamScheduleViewModel: ObservableObject {
             var questions = Array(exam.questions.reversed())
             var clearWM = clearWorkMinutes
             while !questions.isEmpty {
-                if preparationDays[dayIndex].isBadDay || (exam.dateTime <= preparationDays[dayIndex].day && preparationDays[dayIndex].day <= lastExDate) {
+                if preparationDays[dayIndex].isBadDay ||
+                    (exam.dateTime <= preparationDays[dayIndex].day && preparationDays[dayIndex].day <= lastExDate) {
+                    dayIndex += 1
+                    continue
+                }
+                if clearWM == 0 {
+                    clearWM = clearWorkMinutes
                     dayIndex += 1
                     continue
                 }
                 var question = questions.remove(at: 0)
                 if question.timeToLearn > clearWM {
+                    var tmpQuestion = question
+                    tmpQuestion.timeToLearn = clearWM
+                    preparationDays[dayIndex].examQuestions.append(tmpQuestion)
                     question.timeToLearn -= clearWM
                     questions.insert(question, at: 0)
                     clearWM = clearWorkMinutes
-                    preparationDays[dayIndex].examQuestions.append(question)
                     dayIndex += 1
                     continue
                 }
