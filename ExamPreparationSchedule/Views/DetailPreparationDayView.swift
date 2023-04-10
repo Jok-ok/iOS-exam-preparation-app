@@ -12,46 +12,42 @@ struct DetailPreparationDayView: View {
     }()
     private var dayType: String {
         if preparationDay.isBadDay {
-            return "Другие планы"
+            return "Неподходящий для подготовки день"
         }
         if preparationDay.isExamDay {
-            return "Дата экзамена"
+            return "День экзамена"
         }
         if preparationDay.examQuestions.isEmpty {
             return "День свободен"
         }
-        return "Нужно готовиться"
+        return "День для подготовки"
     }
     
     var body: some View {
         List {
-            Section(content: {
-                ForEach($preparationDay.examQuestions) { examQuestion in
-                    VStack{
-                        Text("Вопрос №\(examQuestion.num.wrappedValue)")
-                            .bold()
-                        Divider()
-                        HStack {
-                            Text("На подготовку уйдет:")
-                            Spacer()
-                            Text("\(examQuestion.timeToLearn.wrappedValue) минут")
-                                .bold()
+            Text(dayType)
+                .font(.title2)
+                .bold()
+            if !preparationDay.examQuestions.isEmpty {
+                Section(header: Text("Вопросы, для подготовки")) {
+                    ForEach($preparationDay.examQuestions) { examQuestion in
+                        VStack(alignment: .leading){
+                            HStack {
+                                Text("Вопрос №\(examQuestion.num.wrappedValue) ")
+                                    .bold()
+                                Spacer()
+                                Text("(\(examQuestion.timeToLearn.wrappedValue) минут)")
+                                    .bold()
+                            }
+                            Divider()
+                            Text(examQuestion.text.wrappedValue)
+                                .font(.footnote)
                         }
                     }
                 }
-            }, header: {
-                HStack {
-                    Text("Дата: ")
-                    Spacer()
-                    Text(preparationDay.day.formatted())
-                }
-                HStack {
-                    Text(dayType)
-                }
-            }){
             }
         }
-        .navigationTitle("Дата \(preparationDay.day, formatter: formatter)")
+        .navigationTitle("\(preparationDay.day, formatter: formatter)")
     }
 }
 
